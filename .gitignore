@@ -61,3 +61,6 @@ Thumbs.db
 # Presentation files are kept local only
 /docs/presentation/
 /docs/REVIEW2_PRESENTATION_NOTES.md
+
+# Local evidence files are kept out of Git
+/docs/evidence/
