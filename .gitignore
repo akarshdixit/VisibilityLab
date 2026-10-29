@@ -57,3 +57,7 @@ Thumbs.db
 
 # Next.js route folder (page source, not malware samples)
 !webapp/frontend/app/samples/
+
+# Presentation files are kept local only
+/docs/presentation/
+/docs/REVIEW2_PRESENTATION_NOTES.md

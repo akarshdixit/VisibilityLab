@@ -31,6 +31,7 @@ program is packed.
 - [Safety precautions](#safety-precautions)
 - [Roadmap](#roadmap)
 - [Repository layout](#repository-layout)
+- [Author](#author)
 - [Acknowledgements](#acknowledgements)
 
 ---
@@ -443,9 +444,14 @@ out_demo/          SYNTHETIC pipeline output for the fixtures
 docs/              architecture, methodology, test report, onboarding
 ```
 
+## Author
+
+VisibilityLab, including the research pipeline and the web application, was designed and
+implemented by **Akarsh Dixit**.
+
 ## Acknowledgements
 
-This project was developed as a university team research project.
+This software was developed in the context of an academic research project on malware packing.
 
 - [capa](https://github.com/mandiant/capa) and [CAPE](https://github.com/kevoreilly/CAPEv2) are
   third-party tools. They are not included here and are referred to only as producers of input
