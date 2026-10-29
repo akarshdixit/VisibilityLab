@@ -54,3 +54,6 @@ build/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Next.js route folder (page source, not malware samples)
+!webapp/frontend/app/samples/
