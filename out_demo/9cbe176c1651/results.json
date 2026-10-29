@@ -1,0 +1,147 @@
+{
+  "approval_id": null,
+  "gain_attribution": {
+    "attribution_counts": "n/d",
+    "reason": "A or B not available, so B \\ A is not defined",
+    "status": "n/d",
+    "techniques": "n/d"
+  },
+  "label": "SYNTH-002",
+  "measure_inputs": {
+    "DB": {
+      "reason": "stage B not available"
+    },
+    "G": {
+      "reason": "stage B not available"
+    },
+    "IB": {
+      "reason": "stage B not available"
+    },
+    "L": {
+      "reason": "stage B not available"
+    },
+    "M": {
+      "reason": "stage B not available"
+    },
+    "O": {
+      "reason": "stage B not available"
+    },
+    "QA": {
+      "reason": "stage B not available"
+    },
+    "VA": {
+      "denominator": 5,
+      "numerator": 2
+    },
+    "VB": {
+      "reason": "stage B not available"
+    }
+  },
+  "measures": {
+    "DB": "n/d",
+    "G": "n/d",
+    "IB": "n/d",
+    "L": "n/d",
+    "M": "n/d",
+    "O": "n/d",
+    "QA": "n/d",
+    "VA": 0.4,
+    "VB": "n/d"
+  },
+  "mode": "synthetic",
+  "notice": "SYNTHETIC DEMONSTRATION DATA - fictional inputs; not a result about any real sample",
+  "recovery_gate": {
+    "accepted": false,
+    "checks": {
+      "V1": true,
+      "V2": true,
+      "V3": true,
+      "V4": false,
+      "V5": true
+    },
+    "payload_sha256": "600cb93004010033efd9579255a4173debb9a62b2ee38008286d2ed7508566d9",
+    "reasons": [
+      "budget exceeded (25 > 20)",
+      "V4 not passed (3 imports failed to resolve)"
+    ]
+  },
+  "research_questions": {
+    "RQ1_packed_also_in_dynamic": [
+      "T1027",
+      "T1055"
+    ],
+    "RQ1_packed_static_visible": [
+      "T1027",
+      "T1055",
+      "T1082"
+    ],
+    "RQ2_dynamic_only_after_unpacking": "n/d",
+    "RQ2_gained_after_unpacking": "n/d",
+    "RQ2_kept": "n/d",
+    "RQ2_lost": "n/d",
+    "RQ3_residual_C_minus_B": "n/d"
+  },
+  "residual_classification": {
+    "class_counts": "n/d",
+    "pk_summary": "n/d",
+    "reason": "B or C not available, so C \\ B is not defined",
+    "status": "n/d",
+    "techniques": "n/d"
+  },
+  "sample_sha256": "9cbe176c165117a8b22a67c1cb3bc60ea14ec2e1260a13d9c4f5f78df4ed0c6d",
+  "secondary": {
+    "S_inputs": {
+      "count": 2
+    },
+    "S_overlap_C": 2,
+    "note": "sandbox labels S are reported beside the measures, never inside them"
+  },
+  "sets": {
+    "A": [
+      "T1027",
+      "T1055",
+      "T1082"
+    ],
+    "B": "n/d",
+    "C": [
+      "T1027",
+      "T1055",
+      "T1105",
+      "T1112",
+      "T1620"
+    ],
+    "S": [
+      "T1055",
+      "T1105"
+    ]
+  },
+  "stages": {
+    "A": {
+      "notes": [],
+      "raw_ids": 3,
+      "status": "ok",
+      "techniques": 3
+    },
+    "B": {
+      "notes": [
+        "budget exceeded (25 > 20)",
+        "V4 not passed (3 imports failed to resolve)",
+        "payload report B supplied but not used because the gate rejected recovery"
+      ],
+      "status": "not_recovered"
+    },
+    "C": {
+      "notes": [],
+      "raw_ids": 5,
+      "status": "ok",
+      "techniques": 5
+    },
+    "S": {
+      "notes": [],
+      "raw_ids": 2,
+      "status": "ok",
+      "techniques": 2
+    }
+  },
+  "synthetic": true
+}

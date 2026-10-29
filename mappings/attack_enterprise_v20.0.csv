@@ -1,0 +1,868 @@
+technique_id,status,replacement,note
+T1001,current,,Data Obfuscation
+T1001.001,current,,Junk Data
+T1001.002,current,,Steganography
+T1001.003,current,,Protocol or Service Impersonation
+T1002,revoked,T1560,Data Compressed (revoked; replaced by T1560)
+T1003,current,,OS Credential Dumping
+T1003.001,current,,LSASS Memory
+T1003.002,current,,Security Account Manager
+T1003.003,current,,NTDS
+T1003.004,current,,LSA Secrets
+T1003.005,current,,Cached Domain Credentials
+T1003.006,current,,DCSync
+T1003.007,current,,Proc Filesystem
+T1003.008,current,,/etc/passwd and /etc/shadow
+T1004,revoked,T1547.004,Winlogon Helper DLL (revoked; replaced by T1547.004)
+T1005,current,,Data from Local System
+T1006,current,,Direct Volume Access
+T1007,current,,System Service Discovery
+T1008,current,,Fallback Channels
+T1009,revoked,T1027.001,Binary Padding (revoked; replaced by T1027.001)
+T1010,current,,Application Window Discovery
+T1011,current,,Exfiltration Over Other Network Medium
+T1011.001,current,,Exfiltration Over Bluetooth
+T1012,current,,Query Registry
+T1013,revoked,T1547.010,Port Monitors (revoked; replaced by T1547.010)
+T1014,current,,Rootkit
+T1015,revoked,T1546.008,Accessibility Features (revoked; replaced by T1546.008)
+T1016,current,,System Network Configuration Discovery
+T1016.001,current,,Internet Connection Discovery
+T1016.002,current,,Wi-Fi Discovery
+T1017,revoked,T1072,Application Deployment Software (revoked; replaced by T1072)
+T1018,current,,Remote System Discovery
+T1019,revoked,T1542.001,System Firmware (revoked; replaced by T1542.001)
+T1020,current,,Automated Exfiltration
+T1020.001,current,,Traffic Duplication
+T1021,current,,Remote Services
+T1021.001,current,,Remote Desktop Protocol
+T1021.002,current,,SMB/Windows Admin Shares
+T1021.003,current,,Distributed Component Object Model
+T1021.004,current,,SSH
+T1021.005,current,,VNC
+T1021.006,current,,Windows Remote Management
+T1021.007,current,,Cloud Services
+T1021.008,current,,Direct Cloud VM Connections
+T1022,revoked,T1560,Data Encrypted (revoked; replaced by T1560)
+T1023,revoked,T1547.009,Shortcut Modification (revoked; replaced by T1547.009)
+T1024,revoked,T1573,Custom Cryptographic Protocol (revoked; replaced by T1573)
+T1025,current,,Data from Removable Media
+T1026,deprecated,,Multiband Communication
+T1027,current,,Obfuscated Files or Information
+T1027.001,current,,Binary Padding
+T1027.002,current,,Software Packing
+T1027.003,current,,Steganography
+T1027.004,current,,Compile After Delivery
+T1027.005,current,,Indicator Removal from Tools
+T1027.006,current,,HTML Smuggling
+T1027.007,current,,Dynamic API Resolution
+T1027.008,current,,Stripped Payloads
+T1027.009,current,,Embedded Payloads
+T1027.010,current,,Command Obfuscation
+T1027.011,current,,Fileless Storage
+T1027.012,current,,LNK Icon Smuggling
+T1027.013,current,,Encrypted/Encoded File
+T1027.014,current,,Polymorphic Code
+T1027.015,current,,Compression
+T1027.016,current,,Junk Code Insertion
+T1027.017,current,,SVG Smuggling
+T1027.018,current,,Invisible Unicode
+T1028,revoked,T1021.006,Windows Remote Management (revoked; replaced by T1021.006)
+T1029,current,,Scheduled Transfer
+T1030,current,,Data Transfer Size Limits
+T1031,revoked,T1543.003,Modify Existing Service (revoked; replaced by T1543.003)
+T1032,revoked,T1573,Standard Cryptographic Protocol (revoked; replaced by T1573)
+T1033,current,,System Owner/User Discovery
+T1034,deprecated,,Path Interception
+T1035,revoked,T1569.002,Service Execution (revoked; replaced by T1569.002)
+T1036,current,,Masquerading
+T1036.001,current,,Invalid Code Signature
+T1036.002,current,,Right-to-Left Override
+T1036.003,current,,Rename Legitimate Utilities
+T1036.004,current,,Masquerade Task or Service
+T1036.005,current,,Match Legitimate Resource Name or Location
+T1036.006,current,,Space after Filename
+T1036.007,current,,Double File Extension
+T1036.008,current,,Masquerade File Type
+T1036.009,current,,Break Process Trees
+T1036.010,current,,Masquerade Account Name
+T1036.011,current,,Overwrite Process Arguments
+T1036.012,current,,Browser Fingerprint
+T1037,current,,Boot or Logon Initialization Scripts
+T1037.001,current,,Logon Script (Windows)
+T1037.002,current,,Login Hook
+T1037.003,current,,Network Logon Script
+T1037.004,current,,RC Scripts
+T1037.005,current,,Startup Items
+T1038,revoked,T1574.001,DLL Search Order Hijacking (revoked; replaced by T1574.001)
+T1039,current,,Data from Network Shared Drive
+T1040,current,,Network Sniffing
+T1041,current,,Exfiltration Over C2 Channel
+T1042,revoked,T1546.001,Change Default File Association (revoked; replaced by T1546.001)
+T1043,deprecated,,Commonly Used Port
+T1044,revoked,T1574.010,File System Permissions Weakness (revoked; replaced by T1574.010)
+T1045,revoked,T1027.002,Software Packing (revoked; replaced by T1027.002)
+T1046,current,,Network Service Discovery
+T1047,current,,Windows Management Instrumentation
+T1048,current,,Exfiltration Over Alternative Protocol
+T1048.001,current,,Exfiltration Over Symmetric Encrypted Non-C2 Protocol
+T1048.002,current,,Exfiltration Over Asymmetric Encrypted Non-C2 Protocol
+T1048.003,current,,Exfiltration Over Unencrypted Non-C2 Protocol
+T1049,current,,System Network Connections Discovery
+T1050,revoked,T1543.003,New Service (revoked; replaced by T1543.003)
+T1051,deprecated,,Shared Webroot
+T1052,current,,Exfiltration Over Physical Medium
+T1052.001,current,,Exfiltration over USB
+T1053,current,,Scheduled Task/Job
+T1053.001,revoked,T1053.002,At (Linux) (revoked; replaced by T1053.002)
+T1053.002,current,,At
+T1053.003,current,,Cron
+T1053.004,deprecated,,Launchd
+T1053.005,current,,Scheduled Task
+T1053.006,current,,Systemd Timers
+T1053.007,current,,Container Orchestration Job
+T1054,revoked,T1685,Indicator Blocking (revoked; replaced by T1685)
+T1055,current,,Process Injection
+T1055.001,current,,Dynamic-link Library Injection
+T1055.002,current,,Portable Executable Injection
+T1055.003,current,,Thread Execution Hijacking
+T1055.004,current,,Asynchronous Procedure Call
+T1055.005,current,,Thread Local Storage
+T1055.008,current,,Ptrace System Calls
+T1055.009,current,,Proc Memory
+T1055.011,current,,Extra Window Memory Injection
+T1055.012,current,,Process Hollowing
+T1055.013,current,,Process Doppelgänging
+T1055.014,current,,VDSO Hijacking
+T1055.015,current,,ListPlanting
+T1056,current,,Input Capture
+T1056.001,current,,Keylogging
+T1056.002,current,,GUI Input Capture
+T1056.003,current,,Web Portal Capture
+T1056.004,current,,Credential API Hooking
+T1057,current,,Process Discovery
+T1058,revoked,T1574.011,Service Registry Permissions Weakness (revoked; replaced by T1574.011)
+T1059,current,,Command and Scripting Interpreter
+T1059.001,current,,PowerShell
+T1059.002,current,,AppleScript
+T1059.003,current,,Windows Command Shell
+T1059.004,current,,Unix Shell
+T1059.005,current,,Visual Basic
+T1059.006,current,,Python
+T1059.007,current,,JavaScript
+T1059.008,current,,Network Device CLI
+T1059.009,current,,Cloud API
+T1059.010,current,,AutoHotKey & AutoIT
+T1059.011,current,,Lua
+T1059.012,current,,Hypervisor CLI
+T1059.013,current,,Container CLI/API
+T1060,revoked,T1547.001,Registry Run Keys / Startup Folder (revoked; replaced by T1547.001)
+T1061,deprecated,,Graphical User Interface
+T1062,deprecated,,Hypervisor
+T1063,revoked,T1518.001,Security Software Discovery (revoked; replaced by T1518.001)
+T1064,deprecated,,Scripting
+T1065,revoked,T1571,Uncommonly Used Port (revoked; replaced by T1571)
+T1066,revoked,T1027.005,Indicator Removal from Tools (revoked; replaced by T1027.005)
+T1067,revoked,T1542.003,Bootkit (revoked; replaced by T1542.003)
+T1068,current,,Exploitation for Privilege Escalation
+T1069,current,,Permission Groups Discovery
+T1069.001,current,,Local Groups
+T1069.002,current,,Domain Groups
+T1069.003,current,,Cloud Groups
+T1070,current,,Indicator Removal
+T1070.001,revoked,T1685.005,Clear Windows Event Logs (revoked; replaced by T1685.005)
+T1070.002,revoked,T1685.006,Clear Linux or Mac System Logs (revoked; replaced by T1685.006)
+T1070.003,current,,Clear Command History
+T1070.004,current,,File Deletion
+T1070.005,current,,Network Share Connection Removal
+T1070.006,current,,Timestomp
+T1070.007,current,,Clear Network Connection History and Configurations
+T1070.008,current,,Clear Mailbox Data
+T1070.009,current,,Clear Persistence
+T1070.010,current,,Relocate Malware
+T1071,current,,Application Layer Protocol
+T1071.001,current,,Web Protocols
+T1071.002,current,,File Transfer Protocols
+T1071.003,current,,Mail Protocols
+T1071.004,current,,DNS
+T1071.005,current,,Publish/Subscribe Protocols
+T1072,current,,Software Deployment Tools
+T1073,revoked,T1574.001,DLL Side-Loading (revoked; replaced by T1574.001)
+T1074,current,,Data Staged
+T1074.001,current,,Local Data Staging
+T1074.002,current,,Remote Data Staging
+T1075,revoked,T1550.002,Pass the Hash (revoked; replaced by T1550.002)
+T1076,revoked,T1021.001,Remote Desktop Protocol (revoked; replaced by T1021.001)
+T1077,revoked,T1021.002,Windows Admin Shares (revoked; replaced by T1021.002)
+T1078,current,,Valid Accounts
+T1078.001,current,,Default Accounts
+T1078.002,current,,Domain Accounts
+T1078.003,current,,Local Accounts
+T1078.004,current,,Cloud Accounts
+T1079,revoked,T1573,Multilayer Encryption (revoked; replaced by T1573)
+T1080,current,,Taint Shared Content
+T1081,revoked,T1552.001,Credentials in Files (revoked; replaced by T1552.001)
+T1082,current,,System Information Discovery
+T1083,current,,File and Directory Discovery
+T1084,revoked,T1546.003,Windows Management Instrumentation Event Subscription (revoked; replaced by T1546.003)
+T1085,revoked,T1218.011,Rundll32 (revoked; replaced by T1218.011)
+T1086,revoked,T1059.001,PowerShell (revoked; replaced by T1059.001)
+T1087,current,,Account Discovery
+T1087.001,current,,Local Account
+T1087.002,current,,Domain Account
+T1087.003,current,,Email Account
+T1087.004,current,,Cloud Account
+T1088,revoked,T1548.002,Bypass User Account Control (revoked; replaced by T1548.002)
+T1089,revoked,T1685,Disabling Security Tools (revoked; replaced by T1685)
+T1090,current,,Proxy
+T1090.001,current,,Internal Proxy
+T1090.002,current,,External Proxy
+T1090.003,current,,Multi-hop Proxy
+T1090.004,current,,Domain Fronting
+T1091,current,,Replication Through Removable Media
+T1092,current,,Communication Through Removable Media
+T1093,revoked,T1055.012,Process Hollowing (revoked; replaced by T1055.012)
+T1094,revoked,T1095,Custom Command and Control Protocol (revoked; replaced by T1095)
+T1095,current,,Non-Application Layer Protocol
+T1096,revoked,T1564.004,NTFS File Attributes (revoked; replaced by T1564.004)
+T1097,revoked,T1550.003,Pass the Ticket (revoked; replaced by T1550.003)
+T1098,current,,Account Manipulation
+T1098.001,current,,Additional Cloud Credentials
+T1098.002,current,,Additional Email Delegate Permissions
+T1098.003,current,,Additional Cloud Roles
+T1098.004,current,,SSH Authorized Keys
+T1098.005,current,,Device Registration
+T1098.006,current,,Additional Container Cluster Roles
+T1098.007,current,,Additional Local or Domain Groups
+T1099,revoked,T1070.006,Timestomp (revoked; replaced by T1070.006)
+T1100,revoked,T1505.003,Web Shell (revoked; replaced by T1505.003)
+T1101,revoked,T1547.005,Security Support Provider (revoked; replaced by T1547.005)
+T1102,current,,Web Service
+T1102.001,current,,Dead Drop Resolver
+T1102.002,current,,Bidirectional Communication
+T1102.003,current,,One-Way Communication
+T1103,revoked,T1546.010,AppInit DLLs (revoked; replaced by T1546.010)
+T1104,current,,Multi-Stage Channels
+T1105,current,,Ingress Tool Transfer
+T1106,current,,Native API
+T1107,revoked,T1070.004,File Deletion (revoked; replaced by T1070.004)
+T1108,deprecated,,Redundant Access
+T1109,revoked,T1542.002,Component Firmware (revoked; replaced by T1542.002)
+T1110,current,,Brute Force
+T1110.001,current,,Password Guessing
+T1110.002,current,,Password Cracking
+T1110.003,current,,Password Spraying
+T1110.004,current,,Credential Stuffing
+T1111,current,,Multi-Factor Authentication Interception
+T1112,current,,Modify Registry
+T1113,current,,Screen Capture
+T1114,current,,Email Collection
+T1114.001,current,,Local Email Collection
+T1114.002,current,,Remote Email Collection
+T1114.003,current,,Email Forwarding Rule
+T1115,current,,Clipboard Data
+T1116,revoked,T1553.002,Code Signing (revoked; replaced by T1553.002)
+T1117,revoked,T1218.010,Regsvr32 (revoked; replaced by T1218.010)
+T1118,revoked,T1218.004,InstallUtil (revoked; replaced by T1218.004)
+T1119,current,,Automated Collection
+T1120,current,,Peripheral Device Discovery
+T1121,revoked,T1218.009,Regsvcs/Regasm (revoked; replaced by T1218.009)
+T1122,revoked,T1546.015,Component Object Model Hijacking (revoked; replaced by T1546.015)
+T1123,current,,Audio Capture
+T1124,current,,System Time Discovery
+T1125,current,,Video Capture
+T1126,revoked,T1070.005,Network Share Connection Removal (revoked; replaced by T1070.005)
+T1127,current,,Trusted Developer Utilities Proxy Execution
+T1127.001,current,,MSBuild
+T1127.002,current,,ClickOnce
+T1127.003,current,,JamPlus
+T1128,revoked,T1546.007,Netsh Helper DLL (revoked; replaced by T1546.007)
+T1129,current,,Shared Modules
+T1130,revoked,T1553.004,Install Root Certificate (revoked; replaced by T1553.004)
+T1131,revoked,T1547.002,Authentication Package (revoked; replaced by T1547.002)
+T1132,current,,Data Encoding
+T1132.001,current,,Standard Encoding
+T1132.002,current,,Non-Standard Encoding
+T1133,current,,External Remote Services
+T1134,current,,Access Token Manipulation
+T1134.001,current,,Token Impersonation/Theft
+T1134.002,current,,Create Process with Token
+T1134.003,current,,Make and Impersonate Token
+T1134.004,current,,Parent PID Spoofing
+T1134.005,current,,SID-History Injection
+T1135,current,,Network Share Discovery
+T1136,current,,Create Account
+T1136.001,current,,Local Account
+T1136.002,current,,Domain Account
+T1136.003,current,,Cloud Account
+T1137,current,,Office Application Startup
+T1137.001,current,,Office Template Macros
+T1137.002,current,,Office Test
+T1137.003,current,,Outlook Forms
+T1137.004,current,,Outlook Home Page
+T1137.005,current,,Outlook Rules
+T1137.006,current,,Add-ins
+T1138,revoked,T1546.011,Application Shimming (revoked; replaced by T1546.011)
+T1139,revoked,T1552.003,Bash History (revoked; replaced by T1552.003)
+T1140,current,,Deobfuscate/Decode Files or Information
+T1141,revoked,T1056.002,Input Prompt (revoked; replaced by T1056.002)
+T1142,revoked,T1555.001,Keychain (revoked; replaced by T1555.001)
+T1143,revoked,T1564.003,Hidden Window (revoked; replaced by T1564.003)
+T1144,revoked,T1553.001,Gatekeeper Bypass (revoked; replaced by T1553.001)
+T1145,revoked,T1552.004,Private Keys (revoked; replaced by T1552.004)
+T1146,revoked,T1070.003,Clear Command History (revoked; replaced by T1070.003)
+T1147,revoked,T1564.002,Hidden Users (revoked; replaced by T1564.002)
+T1148,revoked,T1690,HISTCONTROL (revoked; replaced by T1690)
+T1149,deprecated,,LC_MAIN Hijacking
+T1150,revoked,T1647,Plist Modification (revoked; replaced by T1647)
+T1151,revoked,T1036.006,Space after Filename (revoked; replaced by T1036.006)
+T1152,revoked,T1569.001,Launchctl (revoked; replaced by T1569.001)
+T1153,deprecated,,Source
+T1154,revoked,T1546.005,Trap (revoked; replaced by T1546.005)
+T1155,revoked,T1059.002,AppleScript (revoked; replaced by T1059.002)
+T1156,revoked,T1546.004,Malicious Shell Modification (revoked; replaced by T1546.004)
+T1157,revoked,T1574.004,Dylib Hijacking (revoked; replaced by T1574.004)
+T1158,revoked,T1564.001,Hidden Files and Directories (revoked; replaced by T1564.001)
+T1159,revoked,T1543.001,Launch Agent (revoked; replaced by T1543.001)
+T1160,revoked,T1543.004,Launch Daemon (revoked; replaced by T1543.004)
+T1161,revoked,T1546.006,LC_LOAD_DYLIB Addition (revoked; replaced by T1546.006)
+T1162,revoked,T1647,Login Item (revoked; replaced by T1647)
+T1163,revoked,T1037.004,Rc.common (revoked; replaced by T1037.004)
+T1164,revoked,T1547.007,Re-opened Applications (revoked; replaced by T1547.007)
+T1165,revoked,T1037.005,Startup Items (revoked; replaced by T1037.005)
+T1166,revoked,T1548.001,Setuid and Setgid (revoked; replaced by T1548.001)
+T1167,revoked,T1555.002,Securityd Memory (revoked; replaced by T1555.002)
+T1168,revoked,T1053,Local Job Scheduling (revoked; replaced by T1053)
+T1169,revoked,T1548.003,Sudo (revoked; replaced by T1548.003)
+T1170,revoked,T1218.005,Mshta (revoked; replaced by T1218.005)
+T1171,revoked,T1557.001,LLMNR/NBT-NS Poisoning and Relay (revoked; replaced by T1557.001)
+T1172,revoked,T1090.004,Domain Fronting (revoked; replaced by T1090.004)
+T1173,revoked,T1559.002,Dynamic Data Exchange (revoked; replaced by T1559.002)
+T1174,revoked,T1556.002,Password Filter DLL (revoked; replaced by T1556.002)
+T1175,deprecated,,Component Object Model and Distributed COM
+T1176,current,,Software Extensions
+T1176.001,current,,Browser Extensions
+T1176.002,current,,IDE Extensions
+T1177,revoked,T1547.008,LSASS Driver (revoked; replaced by T1547.008)
+T1178,revoked,T1134.005,SID-History Injection (revoked; replaced by T1134.005)
+T1179,revoked,T1056.004,Hooking (revoked; replaced by T1056.004)
+T1180,revoked,T1546.002,Screensaver (revoked; replaced by T1546.002)
+T1181,revoked,T1055.011,Extra Window Memory Injection (revoked; replaced by T1055.011)
+T1182,revoked,T1546.009,AppCert DLLs (revoked; replaced by T1546.009)
+T1183,revoked,T1546.012,Image File Execution Options Injection (revoked; replaced by T1546.012)
+T1184,revoked,T1563.001,SSH Hijacking (revoked; replaced by T1563.001)
+T1185,current,,Browser Session Hijacking
+T1186,revoked,T1055.013,Process Doppelgänging (revoked; replaced by T1055.013)
+T1187,current,,Forced Authentication
+T1188,revoked,T1090.003,Multi-hop Proxy (revoked; replaced by T1090.003)
+T1189,current,,Drive-by Compromise
+T1190,current,,Exploit Public-Facing Application
+T1191,revoked,T1218.003,CMSTP (revoked; replaced by T1218.003)
+T1192,revoked,T1566.002,Spearphishing Link (revoked; replaced by T1566.002)
+T1193,revoked,T1566.001,Spearphishing Attachment (revoked; replaced by T1566.001)
+T1194,revoked,T1566.003,Spearphishing via Service (revoked; replaced by T1566.003)
+T1195,current,,Supply Chain Compromise
+T1195.001,current,,Compromise Software Dependencies and Development Tools
+T1195.002,current,,Compromise Software Supply Chain
+T1195.003,current,,Compromise Hardware Supply Chain
+T1196,revoked,T1218.002,Control Panel Items (revoked; replaced by T1218.002)
+T1197,current,,BITS Jobs
+T1198,revoked,T1553.003,SIP and Trust Provider Hijacking (revoked; replaced by T1553.003)
+T1199,current,,Trusted Relationship
+T1200,current,,Hardware Additions
+T1201,current,,Password Policy Discovery
+T1202,current,,Indirect Command Execution
+T1203,current,,Exploitation for Client Execution
+T1204,current,,User Execution
+T1204.001,current,,Malicious Link
+T1204.002,current,,Malicious File
+T1204.003,current,,Malicious Image
+T1204.004,current,,Malicious Copy and Paste
+T1204.005,current,,Malicious Library
+T1205,current,,Traffic Signaling
+T1205.001,current,,Port Knocking
+T1205.002,current,,Socket Filters
+T1206,revoked,T1548.003,Sudo Caching (revoked; replaced by T1548.003)
+T1207,current,,Rogue Domain Controller
+T1208,revoked,T1558.003,Kerberoasting (revoked; replaced by T1558.003)
+T1209,revoked,T1547.003,Time Providers (revoked; replaced by T1547.003)
+T1210,current,,Exploitation of Remote Services
+T1211,current,,Exploitation for Stealth
+T1212,current,,Exploitation for Credential Access
+T1213,current,,Data from Information Repositories
+T1213.001,current,,Confluence
+T1213.002,current,,Sharepoint
+T1213.003,current,,Code Repositories
+T1213.004,current,,Customer Relationship Management Software
+T1213.005,current,,Messaging Applications
+T1213.006,current,,Databases
+T1214,revoked,T1552.002,Credentials in Registry (revoked; replaced by T1552.002)
+T1215,revoked,T1547.006,Kernel Modules and Extensions (revoked; replaced by T1547.006)
+T1216,current,,System Script Proxy Execution
+T1216.001,current,,PubPrn
+T1216.002,current,,SyncAppvPublishingServer
+T1217,current,,Browser Information Discovery
+T1218,current,,System Binary Proxy Execution
+T1218.001,current,,Compiled HTML File
+T1218.002,current,,Control Panel
+T1218.003,current,,CMSTP
+T1218.004,current,,InstallUtil
+T1218.005,current,,Mshta
+T1218.007,current,,Msiexec
+T1218.008,current,,Odbcconf
+T1218.009,current,,Regsvcs/Regasm
+T1218.010,current,,Regsvr32
+T1218.011,current,,Rundll32
+T1218.012,current,,Verclsid
+T1218.013,current,,Mavinject
+T1218.014,current,,MMC
+T1218.015,current,,Electron Applications
+T1219,current,,Remote Access Tools
+T1219.001,current,,IDE Tunneling
+T1219.002,current,,Remote Desktop Software
+T1219.003,current,,Remote Access Hardware
+T1220,current,,XSL Script Processing
+T1221,current,,Template Injection
+T1222,current,,File and Directory Permissions Modification
+T1222.001,current,,Windows Permissions
+T1222.002,current,,Linux and Mac Permissions
+T1223,revoked,T1218.001,Compiled HTML File (revoked; replaced by T1218.001)
+T1480,current,,Execution Guardrails
+T1480.001,current,,Environmental Keying
+T1480.002,current,,Mutual Exclusion
+T1482,current,,Domain Trust Discovery
+T1483,revoked,T1568.002,Domain Generation Algorithms (revoked; replaced by T1568.002)
+T1484,current,,Domain or Tenant Policy Modification
+T1484.001,current,,Group Policy Modification
+T1484.002,current,,Trust Modification
+T1485,current,,Data Destruction
+T1485.001,current,,Lifecycle-Triggered Deletion
+T1486,current,,Data Encrypted for Impact
+T1487,revoked,T1561.002,Disk Structure Wipe (revoked; replaced by T1561.002)
+T1488,revoked,T1561.001,Disk Content Wipe (revoked; replaced by T1561.001)
+T1489,current,,Service Stop
+T1490,current,,Inhibit System Recovery
+T1491,current,,Defacement
+T1491.001,current,,Internal Defacement
+T1491.002,current,,External Defacement
+T1492,revoked,T1565.001,Stored Data Manipulation (revoked; replaced by T1565.001)
+T1493,revoked,T1565.002,Transmitted Data Manipulation (revoked; replaced by T1565.002)
+T1494,revoked,T1565.003,Runtime Data Manipulation (revoked; replaced by T1565.003)
+T1495,current,,Firmware Corruption
+T1496,current,,Resource Hijacking
+T1496.001,current,,Compute Hijacking
+T1496.002,current,,Bandwidth Hijacking
+T1496.003,current,,SMS Pumping
+T1496.004,current,,Cloud Service Hijacking
+T1497,current,,Virtualization/Sandbox Evasion
+T1497.001,current,,System Checks
+T1497.002,current,,User Activity Based Checks
+T1497.003,current,,Time Based Checks
+T1498,current,,Network Denial of Service
+T1498.001,current,,Direct Network Flood
+T1498.002,current,,Reflection Amplification
+T1499,current,,Endpoint Denial of Service
+T1499.001,current,,OS Exhaustion Flood
+T1499.002,current,,Service Exhaustion Flood
+T1499.003,current,,Application Exhaustion Flood
+T1499.004,current,,Application or System Exploitation
+T1500,revoked,T1027.004,Compile After Delivery (revoked; replaced by T1027.004)
+T1501,revoked,T1543.002,Systemd Service (revoked; replaced by T1543.002)
+T1502,revoked,T1134.004,Parent PID Spoofing (revoked; replaced by T1134.004)
+T1503,revoked,T1555.003,Credentials from Web Browsers (revoked; replaced by T1555.003)
+T1504,revoked,T1546.013,PowerShell Profile (revoked; replaced by T1546.013)
+T1505,current,,Server Software Component
+T1505.001,current,,SQL Stored Procedures
+T1505.002,current,,Transport Agent
+T1505.003,current,,Web Shell
+T1505.004,current,,IIS Components
+T1505.005,current,,Terminal Services DLL
+T1505.006,current,,vSphere Installation Bundles
+T1506,revoked,T1550.004,Web Session Cookie (revoked; replaced by T1550.004)
+T1514,revoked,T1548.004,Elevated Execution with Prompt (revoked; replaced by T1548.004)
+T1518,current,,Software Discovery
+T1518.001,current,,Security Software Discovery
+T1518.002,current,,Backup Software Discovery
+T1519,revoked,T1546.014,Emond (revoked; replaced by T1546.014)
+T1522,revoked,T1552.005,Cloud Instance Metadata API (revoked; replaced by T1552.005)
+T1525,current,,Implant Internal Image
+T1526,current,,Cloud Service Discovery
+T1527,revoked,T1550.001,Application Access Token (revoked; replaced by T1550.001)
+T1528,current,,Steal Application Access Token
+T1529,current,,System Shutdown/Reboot
+T1530,current,,Data from Cloud Storage
+T1531,current,,Account Access Removal
+T1534,current,,Internal Spearphishing
+T1535,current,,Unused/Unsupported Cloud Regions
+T1536,revoked,T1578.004,Revert Cloud Instance (revoked; replaced by T1578.004)
+T1537,current,,Transfer Data to Cloud Account
+T1538,current,,Cloud Service Dashboard
+T1539,current,,Steal Web Session Cookie
+T1542,current,,Pre-OS Boot
+T1542.001,current,,System Firmware
+T1542.002,current,,Component Firmware
+T1542.003,current,,Bootkit
+T1542.004,current,,ROMMONkit
+T1542.005,current,,TFTP Boot
+T1543,current,,Create or Modify System Process
+T1543.001,current,,Launch Agent
+T1543.002,current,,Systemd Service
+T1543.003,current,,Windows Service
+T1543.004,current,,Launch Daemon
+T1543.005,current,,Container Service
+T1546,current,,Event Triggered Execution
+T1546.001,current,,Change Default File Association
+T1546.002,current,,Screensaver
+T1546.003,current,,Windows Management Instrumentation Event Subscription
+T1546.004,current,,Unix Shell Configuration Modification
+T1546.005,current,,Trap
+T1546.006,current,,LC_LOAD_DYLIB Addition
+T1546.007,current,,Netsh Helper DLL
+T1546.008,current,,Accessibility Features
+T1546.009,current,,AppCert DLLs
+T1546.010,current,,AppInit DLLs
+T1546.011,current,,Application Shimming
+T1546.012,current,,Image File Execution Options Injection
+T1546.013,current,,PowerShell Profile
+T1546.014,current,,Emond
+T1546.015,current,,Component Object Model Hijacking
+T1546.016,current,,Installer Packages
+T1546.017,current,,Udev Rules
+T1546.018,current,,Python Startup Hooks
+T1547,current,,Boot or Logon Autostart Execution
+T1547.001,current,,Registry Run Keys / Startup Folder
+T1547.002,current,,Authentication Package
+T1547.003,current,,Time Providers
+T1547.004,current,,Winlogon Helper DLL
+T1547.005,current,,Security Support Provider
+T1547.006,current,,Kernel Modules and Extensions
+T1547.007,current,,Re-opened Applications
+T1547.008,current,,LSASS Driver
+T1547.009,current,,Shortcut Modification
+T1547.010,current,,Port Monitors
+T1547.011,revoked,T1647,Plist Modification (revoked; replaced by T1647)
+T1547.012,current,,Print Processors
+T1547.013,current,,XDG Autostart Entries
+T1547.014,current,,Active Setup
+T1547.015,current,,Login Items
+T1548,current,,Abuse Elevation Control Mechanism
+T1548.001,current,,Setuid and Setgid
+T1548.002,current,,Bypass User Account Control
+T1548.003,current,,Sudo and Sudo Caching
+T1548.004,current,,Elevated Execution with Prompt
+T1548.005,current,,Temporary Elevated Cloud Access
+T1548.006,current,,TCC Manipulation
+T1550,current,,Use Alternate Authentication Material
+T1550.001,current,,Application Access Token
+T1550.002,current,,Pass the Hash
+T1550.003,current,,Pass the Ticket
+T1550.004,current,,Web Session Cookie
+T1552,current,,Unsecured Credentials
+T1552.001,current,,Credentials In Files
+T1552.002,current,,Credentials in Registry
+T1552.003,current,,Shell History
+T1552.004,current,,Private Keys
+T1552.005,current,,Cloud Instance Metadata API
+T1552.006,current,,Group Policy Preferences
+T1552.007,current,,Container API
+T1552.008,current,,Chat Messages
+T1553,current,,Subvert Trust Controls
+T1553.001,current,,Gatekeeper Bypass
+T1553.002,current,,Code Signing
+T1553.003,current,,SIP and Trust Provider Hijacking
+T1553.004,current,,Install Root Certificate
+T1553.005,current,,Mark-of-the-Web Bypass
+T1553.006,current,,Code Signing Policy Modification
+T1554,current,,Compromise Host Software Binary
+T1555,current,,Credentials from Password Stores
+T1555.001,current,,Keychain
+T1555.002,current,,Securityd Memory
+T1555.003,current,,Credentials from Web Browsers
+T1555.004,current,,Windows Credential Manager
+T1555.005,current,,Password Managers
+T1555.006,current,,Cloud Secrets Management Stores
+T1556,current,,Modify Authentication Process
+T1556.001,current,,Domain Controller Authentication
+T1556.002,current,,Password Filter DLL
+T1556.003,current,,Pluggable Authentication Modules
+T1556.004,current,,Network Device Authentication
+T1556.005,current,,Reversible Encryption
+T1556.006,current,,Multi-Factor Authentication
+T1556.007,current,,Hybrid Identity
+T1556.008,current,,Network Provider DLL
+T1556.009,current,,Conditional Access Policies
+T1557,current,,Adversary-in-the-Middle
+T1557.001,current,,Name Resolution Poisoning and SMB Relay
+T1557.002,current,,ARP Cache Poisoning
+T1557.003,current,,DHCP Spoofing
+T1557.004,current,,Evil Twin
+T1558,current,,Steal or Forge Kerberos Tickets
+T1558.001,current,,Golden Ticket
+T1558.002,current,,Silver Ticket
+T1558.003,current,,Kerberoasting
+T1558.004,current,,AS-REP Roasting
+T1558.005,current,,Ccache Files
+T1559,current,,Inter-Process Communication
+T1559.001,current,,Component Object Model
+T1559.002,current,,Dynamic Data Exchange
+T1559.003,current,,XPC Services
+T1560,current,,Archive Collected Data
+T1560.001,current,,Archive via Utility
+T1560.002,current,,Archive via Library
+T1560.003,current,,Archive via Custom Method
+T1561,current,,Disk Wipe
+T1561.001,current,,Disk Content Wipe
+T1561.002,current,,Disk Structure Wipe
+T1562,revoked,T1685,Impair Defenses (revoked; replaced by T1685)
+T1562.001,revoked,T1685,Disable or Modify Tools (revoked; replaced by T1685)
+T1562.002,revoked,T1685.001,Disable Windows Event Logging (revoked; replaced by T1685.001)
+T1562.003,revoked,T1690,Impair Command History Logging (revoked; replaced by T1690)
+T1562.004,revoked,T1686,Disable or Modify System Firewall (revoked; replaced by T1686)
+T1562.006,revoked,T1685,Indicator Blocking (revoked; replaced by T1685)
+T1562.007,revoked,T1686.001,Disable or Modify Cloud Firewall (revoked; replaced by T1686.001)
+T1562.008,revoked,T1685.002,Disable or Modify Cloud Logs (revoked; replaced by T1685.002)
+T1562.009,revoked,T1688,Safe Mode Boot (revoked; replaced by T1688)
+T1562.010,revoked,T1689,Downgrade Attack (revoked; replaced by T1689)
+T1562.011,revoked,T1685.003,Spoof Security Alerting (revoked; replaced by T1685.003)
+T1562.012,revoked,T1685.004,Disable or Modify Linux Audit System (revoked; replaced by T1685.004)
+T1562.013,revoked,T1686.002,Disable or Modify Network Device Firewall (revoked; replaced by T1686.002)
+T1563,current,,Remote Service Session Hijacking
+T1563.001,current,,SSH Hijacking
+T1563.002,current,,RDP Hijacking
+T1564,current,,Hide Artifacts
+T1564.001,current,,Hidden Files and Directories
+T1564.002,current,,Hidden Users
+T1564.003,current,,Hidden Window
+T1564.004,current,,NTFS File Attributes
+T1564.005,current,,Hidden File System
+T1564.006,current,,Run Virtual Instance
+T1564.007,current,,VBA Stomping
+T1564.008,current,,Email Hiding Rules
+T1564.009,current,,Resource Forking
+T1564.010,current,,Process Argument Spoofing
+T1564.011,current,,Ignore Process Interrupts
+T1564.012,current,,File/Path Exclusions
+T1564.013,current,,Bind Mounts
+T1564.014,current,,Extended Attributes
+T1565,current,,Data Manipulation
+T1565.001,current,,Stored Data Manipulation
+T1565.002,current,,Transmitted Data Manipulation
+T1565.003,current,,Runtime Data Manipulation
+T1566,current,,Phishing
+T1566.001,current,,Spearphishing Attachment
+T1566.002,current,,Spearphishing Link
+T1566.003,current,,Spearphishing via Service
+T1566.004,current,,Spearphishing Voice
+T1567,current,,Exfiltration Over Web Service
+T1567.001,current,,Exfiltration to Code Repository
+T1567.002,current,,Exfiltration to Cloud Storage
+T1567.003,current,,Exfiltration to Text Storage Sites
+T1567.004,current,,Exfiltration Over Webhook
+T1568,current,,Dynamic Resolution
+T1568.001,current,,Fast Flux DNS
+T1568.002,current,,Domain Generation Algorithms
+T1568.003,current,,DNS Calculation
+T1569,current,,System Services
+T1569.001,current,,Launchctl
+T1569.002,current,,Service Execution
+T1569.003,current,,Systemctl
+T1570,current,,Lateral Tool Transfer
+T1571,current,,Non-Standard Port
+T1572,current,,Protocol Tunneling
+T1573,current,,Encrypted Channel
+T1573.001,current,,Symmetric Cryptography
+T1573.002,current,,Asymmetric Cryptography
+T1574,current,,Hijack Execution Flow
+T1574.001,current,,DLL
+T1574.002,revoked,T1574.001,DLL Side-Loading (revoked; replaced by T1574.001)
+T1574.004,current,,Dylib Hijacking
+T1574.005,current,,Executable Installer File Permissions Weakness
+T1574.006,current,,Dynamic Linker Hijacking
+T1574.007,current,,Path Interception by PATH Environment Variable
+T1574.008,current,,Path Interception by Search Order Hijacking
+T1574.009,current,,Path Interception by Unquoted Path
+T1574.010,current,,Services File Permissions Weakness
+T1574.011,current,,Services Registry Permissions Weakness
+T1574.012,current,,COR_PROFILER
+T1574.013,current,,KernelCallbackTable
+T1574.014,current,,AppDomainManager
+T1578,current,,Modify Cloud Compute Infrastructure
+T1578.001,current,,Create Snapshot
+T1578.002,current,,Create Cloud Instance
+T1578.003,current,,Delete Cloud Instance
+T1578.004,current,,Revert Cloud Instance
+T1578.005,current,,Modify Cloud Compute Configurations
+T1580,current,,Cloud Infrastructure Discovery
+T1583,current,,Acquire Infrastructure
+T1583.001,current,,Domains
+T1583.002,current,,DNS Server
+T1583.003,current,,Virtual Private Server
+T1583.004,current,,Server
+T1583.005,current,,Botnet
+T1583.006,current,,Web Services
+T1583.007,current,,Serverless
+T1583.008,current,,Malvertising
+T1584,current,,Compromise Infrastructure
+T1584.001,current,,Domains
+T1584.002,current,,DNS Server
+T1584.003,current,,Virtual Private Server
+T1584.004,current,,Server
+T1584.005,current,,Botnet
+T1584.006,current,,Web Services
+T1584.007,current,,Serverless
+T1584.008,current,,Network Devices
+T1585,current,,Establish Accounts
+T1585.001,current,,Social Media Accounts
+T1585.002,current,,Email Accounts
+T1585.003,current,,Cloud Accounts
+T1586,current,,Compromise Accounts
+T1586.001,current,,Social Media Accounts
+T1586.002,current,,Email Accounts
+T1586.003,current,,Cloud Accounts
+T1587,current,,Develop Capabilities
+T1587.001,current,,Malware
+T1587.002,current,,Code Signing Certificates
+T1587.003,current,,Digital Certificates
+T1587.004,current,,Exploits
+T1588,current,,Obtain Capabilities
+T1588.001,current,,Malware
+T1588.002,current,,Tool
+T1588.003,current,,Code Signing Certificates
+T1588.004,current,,Digital Certificates
+T1588.005,current,,Exploits
+T1588.006,current,,Vulnerabilities
+T1588.007,current,,Artificial Intelligence
+T1589,current,,Gather Victim Identity Information
+T1589.001,current,,Credentials
+T1589.002,current,,Email Addresses
+T1589.003,current,,Employee Names
+T1590,current,,Gather Victim Network Information
+T1590.001,current,,Domain Properties
+T1590.002,current,,DNS
+T1590.003,current,,Network Trust Dependencies
+T1590.004,current,,Network Topology
+T1590.005,current,,IP Addresses
+T1590.006,current,,Network Security Appliances
+T1591,current,,Gather Victim Org Information
+T1591.001,current,,Determine Physical Locations
+T1591.002,current,,Business Relationships
+T1591.003,current,,Identify Business Tempo
+T1591.004,current,,Identify Roles
+T1592,current,,Gather Victim Host Information
+T1592.001,current,,Hardware
+T1592.002,current,,Software
+T1592.003,current,,Firmware
+T1592.004,current,,Client Configurations
+T1593,current,,Search Open Websites/Domains
+T1593.001,current,,Social Media
+T1593.002,current,,Search Engines
+T1593.003,current,,Code Repositories
+T1594,current,,Search Victim-Owned Websites
+T1595,current,,Active Scanning
+T1595.001,current,,Scanning IP Blocks
+T1595.002,current,,Vulnerability Scanning
+T1595.003,current,,Wordlist Scanning
+T1596,current,,Search Open Technical Databases
+T1596.001,current,,DNS/Passive DNS
+T1596.002,current,,WHOIS
+T1596.003,current,,Digital Certificates
+T1596.004,current,,CDNs
+T1596.005,current,,Scan Databases
+T1597,current,,Search Closed Sources
+T1597.001,current,,Threat Intel Vendors
+T1597.002,current,,Purchase Technical Data
+T1598,current,,Phishing for Information
+T1598.001,current,,Spearphishing Service
+T1598.002,current,,Spearphishing Attachment
+T1598.003,current,,Spearphishing Link
+T1598.004,current,,Spearphishing Voice
+T1599,current,,Network Boundary Bridging
+T1599.001,current,,Network Address Translation Traversal
+T1600,current,,Weaken Encryption
+T1600.001,current,,Reduce Key Space
+T1600.002,current,,Disable Crypto Hardware
+T1601,current,,Modify System Image
+T1601.001,current,,Patch System Image
+T1601.002,current,,Downgrade System Image
+T1602,current,,Data from Configuration Repository
+T1602.001,current,,SNMP (MIB Dump)
+T1602.002,current,,Network Device Configuration Dump
+T1606,current,,Forge Web Credentials
+T1606.001,current,,Web Cookies
+T1606.002,current,,SAML Tokens
+T1608,current,,Stage Capabilities
+T1608.001,current,,Upload Malware
+T1608.002,current,,Upload Tool
+T1608.003,current,,Install Digital Certificate
+T1608.004,current,,Drive-by Target
+T1608.005,current,,Link Target
+T1608.006,current,,SEO Poisoning
+T1608.007,current,,AI Result Poisoning
+T1609,current,,Container Administration Command
+T1610,current,,Deploy Container
+T1611,current,,Escape to Host
+T1612,current,,Build Image on Host
+T1613,current,,Container and Resource Discovery
+T1614,current,,System Location Discovery
+T1614.001,current,,System Language Discovery
+T1615,current,,Group Policy Discovery
+T1619,current,,Cloud Storage Object Discovery
+T1620,current,,Reflective Code Loading
+T1621,current,,Multi-Factor Authentication Request Generation
+T1622,current,,Debugger Evasion
+T1647,current,,Plist File Modification
+T1648,current,,Serverless Execution
+T1649,current,,Steal or Forge Authentication Certificates
+T1650,current,,Acquire Access
+T1651,current,,Cloud Administration Command
+T1652,current,,Device Driver Discovery
+T1653,current,,Power Settings
+T1654,current,,Log Enumeration
+T1656,revoked,T1684.001,Impersonation (revoked; replaced by T1684.001)
+T1657,current,,Financial Theft
+T1659,current,,Content Injection
+T1665,current,,Hide Infrastructure
+T1666,current,,Modify Cloud Resource Hierarchy
+T1667,current,,Email Bombing
+T1668,current,,Exclusive Control
+T1669,current,,Wi-Fi Networks
+T1671,current,,Cloud Application Integration
+T1672,revoked,T1684.002,Email Spoofing (revoked; replaced by T1684.002)
+T1673,current,,Virtual Machine Discovery
+T1674,current,,Input Injection
+T1675,current,,ESXi Administration Command
+T1677,current,,Poisoned Pipeline Execution
+T1678,current,,Delay Execution
+T1679,current,,Selective Exclusion
+T1680,current,,Local Storage Discovery
+T1681,current,,Search Threat Vendor Data
+T1682,current,,Query Public AI Services
+T1683,current,,Generate Content
+T1683.001,current,,Written Content
+T1683.002,current,,Audio-Visual Content
+T1684,current,,Social Engineering
+T1684.001,current,,Impersonation
+T1684.002,current,,Email Spoofing
+T1685,current,,Disable or Modify Tools
+T1685.001,current,,Disable or Modify Windows Event Log
+T1685.002,current,,Disable or Modify Cloud Log
+T1685.003,current,,Modify or Spoof Tool UI
+T1685.004,current,,Disable or Modify Linux Audit System Log
+T1685.005,current,,Clear Windows Event Logs
+T1685.006,current,,Clear Linux or Mac System Logs
+T1685.007,current,,Impair Autonomous Defenses
+T1686,current,,Disable or Modify System Firewall
+T1686.001,current,,Cloud Firewall
+T1686.002,current,,Network Device Firewall
+T1686.003,current,,Windows Host Firewall
+T1687,current,,Exploitation for Defense Impairment
+T1688,current,,Safe Mode Boot
+T1689,current,,Downgrade Attack
+T1690,current,,Prevent Command History Logging
+T1696,current,,Anti-Automation Evasion
+T1696.001,current,,Automate CAPTCHA Completion
+T1696.002,current,,Avoid CAPTCHA
+T1697,current,,Steal Application Specific Passwords
+T1698,current,,Indirect Prompt Injection
+T1699,current,,Direct Prompt Injection
+T1700,current,,AI-Enabled Exfiltration

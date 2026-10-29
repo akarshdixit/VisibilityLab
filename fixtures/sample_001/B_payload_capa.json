@@ -1,0 +1,50 @@
+{
+  "synthetic": true,
+  "note": "SYNTHETIC FIXTURE - fictional data for pipeline testing; not real tool output",
+  "meta": {
+    "sample": {
+      "sha256": "f69bfc31fb607e314df800aa90e7d899b22d895767ce25c1648f86f79bfefdf4"
+    }
+  },
+  "rules": {
+    "payload-rule-1": {
+      "meta": {
+        "attack": [
+          {
+            "id": "T1055"
+          }
+        ]
+      }
+    },
+    "payload-rule-2": {
+      "meta": {
+        "attack": [
+          {
+            "id": "T1027"
+          },
+          {
+            "id": "T1082"
+          }
+        ]
+      }
+    },
+    "payload-rule-3": {
+      "meta": {
+        "attack": [
+          {
+            "id": "T1497"
+          }
+        ]
+      }
+    },
+    "payload-rule-4": {
+      "meta": {
+        "attack": [
+          {
+            "id": "T0001"
+          }
+        ]
+      }
+    }
+  }
+}

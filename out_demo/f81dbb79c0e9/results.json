@@ -1,0 +1,181 @@
+{
+  "approval_id": null,
+  "gain_attribution": {
+    "attribution_counts": {
+      "dump_artifact": 0,
+      "payload": 1,
+      "uncertain": 0
+    },
+    "reason": "",
+    "status": "ok",
+    "techniques": [
+      "T1497"
+    ]
+  },
+  "label": "SYNTH-001",
+  "measure_inputs": {
+    "DB": {
+      "denominator": 5,
+      "numerator": 0
+    },
+    "G": {
+      "count": 1
+    },
+    "IB": {
+      "denominator": 5,
+      "numerator": 3
+    },
+    "L": {
+      "count": 0
+    },
+    "M": {
+      "count": 2
+    },
+    "O": {
+      "count": 2
+    },
+    "QA": {
+      "denominator": 4,
+      "numerator": 3
+    },
+    "VA": {
+      "denominator": 5,
+      "numerator": 2
+    },
+    "VB": {
+      "denominator": 5,
+      "numerator": 2
+    }
+  },
+  "measures": {
+    "DB": 0.0,
+    "G": 1,
+    "IB": 0.6,
+    "L": 0,
+    "M": 2,
+    "O": 2,
+    "QA": 0.75,
+    "VA": 0.4,
+    "VB": 0.4
+  },
+  "mode": "synthetic",
+  "notice": "SYNTHETIC DEMONSTRATION DATA - fictional inputs; not a result about any real sample",
+  "recovery_gate": {
+    "accepted": true,
+    "checks": {
+      "V1": true,
+      "V2": true,
+      "V3": true,
+      "V4": true,
+      "V5": true
+    },
+    "payload_sha256": "f69bfc31fb607e314df800aa90e7d899b22d895767ce25c1648f86f79bfefdf4",
+    "reasons": []
+  },
+  "research_questions": {
+    "RQ1_packed_also_in_dynamic": [
+      "T1027",
+      "T1055"
+    ],
+    "RQ1_packed_static_visible": [
+      "T1027",
+      "T1055",
+      "T1082"
+    ],
+    "RQ2_dynamic_only_after_unpacking": [],
+    "RQ2_gained_after_unpacking": [
+      "T1497"
+    ],
+    "RQ2_kept": [
+      "T1027",
+      "T1055",
+      "T1082"
+    ],
+    "RQ2_lost": [],
+    "RQ3_residual_C_minus_B": [
+      "T1112",
+      "T1620",
+      "T9998"
+    ]
+  },
+  "residual_classification": {
+    "class_counts": {
+      "E": 0,
+      "K": 1,
+      "M": 0,
+      "O": 0,
+      "P": 1,
+      "T": 0,
+      "U": 1
+    },
+    "pk_summary": "P=1, K=1 (P+K=2)",
+    "reason": "",
+    "status": "ok",
+    "techniques": [
+      "T1112",
+      "T1620",
+      "T9998"
+    ]
+  },
+  "sample_sha256": "f81dbb79c0e9d3b0efde04eb3db340ca93cf3a0bf05216bcbfcf0e78a69a358d",
+  "secondary": {
+    "S_inputs": {
+      "count": 1
+    },
+    "S_overlap_C": 1,
+    "note": "sandbox labels S are reported beside the measures, never inside them"
+  },
+  "sets": {
+    "A": [
+      "T1027",
+      "T1055",
+      "T1082"
+    ],
+    "B": [
+      "T1027",
+      "T1055",
+      "T1082",
+      "T1497"
+    ],
+    "C": [
+      "T1027",
+      "T1055",
+      "T1112",
+      "T1620",
+      "T9998"
+    ],
+    "S": [
+      "T1055",
+      "T1486"
+    ]
+  },
+  "stages": {
+    "A": {
+      "notes": [],
+      "raw_ids": 3,
+      "status": "ok",
+      "techniques": 3
+    },
+    "B": {
+      "notes": [],
+      "raw_ids": 5,
+      "status": "ok",
+      "techniques": 4
+    },
+    "C": {
+      "notes": [
+        "flagged (kept): T9998"
+      ],
+      "raw_ids": 5,
+      "status": "ok",
+      "techniques": 5
+    },
+    "S": {
+      "notes": [],
+      "raw_ids": 2,
+      "status": "ok",
+      "techniques": 2
+    }
+  },
+  "synthetic": true
+}

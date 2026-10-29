@@ -1,0 +1,4 @@
+technique,class,class_meaning,evidence_ref,reason
+T1112,P,Incomplete or incorrect payload recovery,B_recovery#checks.V3,synthetic: points at the payload check
+T1620,K,Behaviour of the packer or unpacking stub,C#rules.dyn-rule-4,synthetic: points at the dynamic rule
+T9998,U,Unresolved: default when there is no evidence,,no evidence record; default U

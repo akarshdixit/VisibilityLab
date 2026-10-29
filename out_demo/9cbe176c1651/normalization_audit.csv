@@ -1,0 +1,11 @@
+stage,raw_id,normalized_id,status,rules_applied,source_rules
+A,T1027,T1027,current,N1;N2;N3;N4;N5;N6,packed-rule-2
+A,T1055,T1055,current,N1;N2;N3;N4;N5;N6,packed-rule-1
+A,T1082,T1082,current,N1;N2;N3;N4;N5;N6,packed-rule-3
+C,T1027,T1027,current,N1;N2;N3;N4;N5;N6,dyn-rule-2
+C,T1055,T1055,current,N1;N2;N3;N4;N5;N6,dyn-rule-1
+C,T1105,T1105,current,N1;N2;N3;N4;N5;N6,dyn-rule-5
+C,T1112,T1112,current,N1;N2;N3;N4;N5;N6,dyn-rule-3
+C,T1620,T1620,current,N1;N2;N3;N4;N5;N6,dyn-rule-4
+S,T1055,T1055,current,N1;N2;N3;N4;N5;N6,sandbox_label
+S,T1105,T1105,current,N1;N2;N3;N4;N5;N6,sandbox_label

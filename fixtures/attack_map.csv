@@ -1,0 +1,11 @@
+technique_id,status,replacement,note
+T1027,current,,synthetic fixture row
+T1055,current,,synthetic fixture row
+T1055.001,current,,synthetic fixture row
+T1082,current,,synthetic fixture row
+T1105,current,,synthetic fixture row
+T1112,current,,synthetic fixture row
+T1486,current,,synthetic fixture row
+T1497,current,,synthetic fixture row
+T1620,current,,synthetic fixture row
+T0001,revoked,T1027,synthetic fixture row

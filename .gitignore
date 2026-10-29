@@ -1,0 +1,56 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+out/
+out_*/
+!out_demo/
+register.csv
+# Never commit samples or payloads to this repository.
+*.exe
+*.dll
+*.bin
+*.sys
+samples/
+payloads/
+# VisibilityLab runtime data (DB, evidence, quarantine, job results) and frontend build output
+webapp/data/
+webapp/frontend/node_modules/
+webapp/frontend/.next/
+webapp/frontend/next-env.d.ts
+.env
+*.sqlite3
+
+# Environment files (keep safe templates)
+.env.*
+!.env.example
+
+# Python environments, caches, coverage
+.venv/
+venv/
+env/
+*.py[cod]
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+
+# Node / frontend build output
+node_modules/
+.next/
+dist/
+build/
+*.tsbuildinfo
+
+# Local databases and logs
+*.db
+*.sqlite
+*.sqlite3-journal
+*.log
+
+# Editor / OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

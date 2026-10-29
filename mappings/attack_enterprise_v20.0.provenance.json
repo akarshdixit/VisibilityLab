@@ -1,0 +1,14 @@
+{
+  "name": "attack_enterprise_v20.0.csv",
+  "attack_domain": "enterprise-attack",
+  "attack_version": "20.0",
+  "source_url": "https://raw.githubusercontent.com/mitre-attack/attack-stix-data/master/enterprise-attack/enterprise-attack-20.0.json",
+  "source_sha256": "81113ba98afa2928f3dcff62022539f7ce30c315c32e14422f11ff95ce534352",
+  "csv_sha256": "f3e3fd4672ceb2322f623008463aa486210accfe344c43424d277c3739c14146",
+  "rows": {
+    "current": 706,
+    "revoked": 149,
+    "deprecated": 12
+  },
+  "generator": "tools/build_attack_map.py"
+}

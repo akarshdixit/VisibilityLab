@@ -1,0 +1,9 @@
+{
+  "synthetic": true,
+  "note": "SYNTHETIC FIXTURE - fictional data for pipeline testing; not real tool output",
+  "source": "synthetic sandbox label list",
+  "techniques": [
+    "T1055",
+    "T1105"
+  ]
+}

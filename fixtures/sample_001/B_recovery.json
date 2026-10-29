@@ -1,0 +1,55 @@
+{
+  "synthetic": true,
+  "note": "SYNTHETIC FIXTURE - fictional data for pipeline testing; not real tool output. Structural checks are asserted by this synthetic record; they are not an independent validation of any executable.",
+  "sample_sha256": "f81dbb79c0e9d3b0efde04eb3db340ca93cf3a0bf05216bcbfcf0e78a69a358d",
+  "check_source": "operator_tool",
+  "tool": {
+    "name": "synthetic-operator-tool",
+    "version": "0.0-fixture"
+  },
+  "payload_sha256": "f69bfc31fb607e314df800aa90e7d899b22d895767ce25c1648f86f79bfefdf4",
+  "budget_used": 12,
+  "budget_limit": 20,
+  "budget_unit": "minutes",
+  "checks": {
+    "V1": {
+      "passed": true,
+      "dos_magic": "MZ",
+      "nt_signature": "PE",
+      "number_of_sections": 3
+    },
+    "V2": {
+      "passed": true,
+      "stored_payload_sha256": "f69bfc31fb607e314df800aa90e7d899b22d895767ce25c1648f86f79bfefdf4"
+    },
+    "V3": {
+      "passed": true,
+      "entry_point_rva": 6720,
+      "sections": [
+        {
+          "name": ".text",
+          "virtual_address": 4096,
+          "virtual_size": 24576
+        },
+        {
+          "name": ".rdata",
+          "virtual_address": 28672,
+          "virtual_size": 8192
+        },
+        {
+          "name": ".data",
+          "virtual_address": 36864,
+          "virtual_size": 4096
+        }
+      ]
+    },
+    "V4": {
+      "passed": true,
+      "imports_resolved": 40,
+      "import_errors": 0
+    },
+    "V5": {
+      "passed": true
+    }
+  }
+}

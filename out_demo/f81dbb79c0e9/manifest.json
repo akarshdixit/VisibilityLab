@@ -1,0 +1,64 @@
+{
+  "approval_id": null,
+  "created_utc": "2026-10-27T18:19:40Z",
+  "inputs": {
+    "A": {
+      "path": "sample_001/A_packed_capa.json",
+      "sha256": "ee060b2b309c0334af7530a2d65e919a333690da2e0bd5f8e262606ff1d69174"
+    },
+    "B": {
+      "path": "sample_001/B_payload_capa.json",
+      "sha256": "1429b0ed126fa9c1e4d3a1f032e689aa97d0addb955dc6f001cc945ef6074787"
+    },
+    "B_recovery": {
+      "path": "sample_001/B_recovery.json",
+      "sha256": "1f43d0f459863d420cc27929083800cd4f32311c603f30bc7fada04ece5a1925"
+    },
+    "C": {
+      "path": "sample_001/C_dynamic_capa.json",
+      "sha256": "d8f8af356f3eb630de30ec0a504df2de4f7041e712082b51bde0d8692cc72ae6"
+    },
+    "S": {
+      "path": "sample_001/S_sandbox_labels.json",
+      "sha256": "0fca1c729935c626cda6be746f4b12465ebe32dfd6a2c659ab5836f1d50aad1e"
+    },
+    "evidence": {
+      "path": "sample_001/evidence.json",
+      "sha256": "5be77216447efc8844edc2eea2dd99c78d995b9252bd1d146e3bdbc04770259d"
+    }
+  },
+  "manifest_sha256": "8a6eac781cd73832bf52cce57f9dfb7584c3f869094b64d546eb437818fb5605",
+  "mapping": {
+    "name": "attack_map.csv",
+    "sha256": "50887f97cfb7cedb0080edbc6d34b2ca0814bf2fc54f861109299be86f0c9141",
+    "version": "Synthetic mapping v1 (fixture, not the official ATT&CK export)"
+  },
+  "mode": "synthetic",
+  "options": {
+    "collapse_subtechniques": false
+  },
+  "outputs": {
+    "gain_attribution.csv": "fc79e827c3a66338ed8ad77bf9dfbf91d6259115ddb2652c65987e4a0d2d0d2a",
+    "normalization_audit.csv": "27168721b278019bed9e8ea2413aa4b78d1089bcc1961e098cd44df8c3f49826",
+    "raw/A.json": "ee060b2b309c0334af7530a2d65e919a333690da2e0bd5f8e262606ff1d69174",
+    "raw/B.json": "1429b0ed126fa9c1e4d3a1f032e689aa97d0addb955dc6f001cc945ef6074787",
+    "raw/B_recovery.json": "1f43d0f459863d420cc27929083800cd4f32311c603f30bc7fada04ece5a1925",
+    "raw/C.json": "d8f8af356f3eb630de30ec0a504df2de4f7041e712082b51bde0d8692cc72ae6",
+    "raw/S.json": "0fca1c729935c626cda6be746f4b12465ebe32dfd6a2c659ab5836f1d50aad1e",
+    "raw/evidence.json": "5be77216447efc8844edc2eea2dd99c78d995b9252bd1d146e3bdbc04770259d",
+    "residual_classification.csv": "4705f0ba65b6f81e902c76e6c645f524c827e0e37f6ed4265e6a72f8fa8873ed",
+    "results.json": "ec737f04ac8727db8411e78670d8043fb42a2e3d282655240458537db05b8cb3"
+  },
+  "sample_sha256": "f81dbb79c0e9d3b0efde04eb3db340ca93cf3a0bf05216bcbfcf0e78a69a358d",
+  "stages": {
+    "A": "ok",
+    "B": "ok",
+    "C": "ok",
+    "S": "ok"
+  },
+  "synthetic": true,
+  "tool": {
+    "pipeline": "0.2.0",
+    "python": "3.13.7"
+  }
+}

@@ -1,0 +1,3 @@
+sample_sha256,label,mode,synthetic,run_status,stage_A,stage_B,stage_C,stage_S,QA,VA,VB,DB,IB,G,L,M,O,S_overlap_C,class_P,class_K,class_O,class_E,class_T,class_M,class_U,pk_summary,manifest_sha256,note
+f81dbb79c0e9d3b0efde04eb3db340ca93cf3a0bf05216bcbfcf0e78a69a358d,SYNTH-001,synthetic,True,completed,ok,ok,ok,ok,0.75,0.4,0.4,0.0,0.6,1,0,2,2,1,1,1,0,0,0,0,1,"P=1, K=1 (P+K=2)",8a6eac781cd73832bf52cce57f9dfb7584c3f869094b64d546eb437818fb5605,
+9cbe176c165117a8b22a67c1cb3bc60ea14ec2e1260a13d9c4f5f78df4ed0c6d,SYNTH-002,synthetic,True,completed,ok,not_recovered,ok,ok,n/d,0.4,n/d,n/d,n/d,n/d,n/d,n/d,n/d,2,n/d,n/d,n/d,n/d,n/d,n/d,n/d,n/d,df904e9ca5fa20aea88a1a48da87db2bfd49a75a7f5b0b2b7792fd98fd0f5032,budget exceeded (25 > 20); V4 not passed (3 imports failed to resolve)

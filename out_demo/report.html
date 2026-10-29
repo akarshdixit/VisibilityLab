@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Visibility Loss Report</title><style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#14202b;background:#fff;max-width:1100px}
+h1{font-size:22px}h2{font-size:18px;margin-top:28px;border-bottom:2px solid #1fa89a;padding-bottom:4px}
+.warn{background:#fff3cd;border:1px solid #e0a82e;padding:10px 14px;border-radius:6px;font-weight:600}
+table{border-collapse:collapse;margin:8px 0 16px;font-size:14px}
+th,td{border:1px solid #c9d3dc;padding:5px 10px;text-align:left;vertical-align:top}
+th{background:#10202e;color:#fff}.nd{color:#9a6b00;font-style:italic}.mono{font-family:Consolas,monospace;font-size:12px}
+</style></head><body><h1>Behavioral visibility loss - batch report</h1>
+<p class='warn'>SYNTHETIC DEMONSTRATION DATA. All IDs, hashes and reports are fictional. Nothing here is a result about real malware.</p>
+<h2>Measures</h2><table><tr><th>Sample</th><th>B stage</th><th>QA</th><th>VA</th><th>VB</th><th>DB</th><th>IB</th><th>G</th><th>L</th><th>M</th><th>O</th><th>S∩C</th><th>Residual classes</th></tr>
+<tr><td>SYNTH-001</td><td>ok</td><td>0.75</td><td>0.4</td><td>0.4</td><td>0.0</td><td>0.6</td><td>1</td><td>0</td><td>2</td><td>2</td><td>1</td><td>P=1, K=1 (P+K=2)</td></tr>
+<tr><td>SYNTH-002</td><td>not_recovered</td><td class="nd">n/d</td><td>0.4</td><td class="nd">n/d</td><td class="nd">n/d</td><td class="nd">n/d</td><td class="nd">n/d</td><td class="nd">n/d</td><td class="nd">n/d</td><td class="nd">n/d</td><td>2</td><td class="nd">n/d</td></tr>
+</table><table><tr><th>Measure</th><th>Formula</th></tr><tr><td>QA</td><td>|A ∩ B| / |B|</td></tr><tr><td>VA</td><td>|A ∩ C| / |C|</td></tr><tr><td>VB</td><td>|B ∩ C| / |C|</td></tr><tr><td>DB</td><td>|(B ∩ C) \ A| / |C|</td></tr><tr><td>IB</td><td>|C \ B| / |C|</td></tr><tr><td>G</td><td>|B \ A|</td></tr><tr><td>L</td><td>|A \ B|</td></tr><tr><td>M</td><td>|B ∩ C|</td></tr><tr><td>O</td><td>|B \ C|</td></tr><tr><td>S_overlap_C</td><td>|S ∩ C|</td></tr></table>
+<h2>SYNTH-001 <span class='mono'>f81dbb79c0e9d3b0efde04eb3db340ca93cf3a0bf05216bcbfcf0e78a69a358d</span></h2>
+<table><tr><th>Set</th><th>Status</th><th>Techniques (normalized)</th><th>Notes</th></tr>
+<tr><td>A</td><td>ok</td><td>T1027, T1055, T1082</td><td></td></tr>
+<tr><td>B</td><td>ok</td><td>T1027, T1055, T1082, T1497</td><td></td></tr>
+<tr><td>C</td><td>ok</td><td>T1027, T1055, T1112, T1620, T9998</td><td>flagged (kept): T9998</td></tr>
+<tr><td>S</td><td>ok</td><td>T1055, T1486</td><td></td></tr>
+</table>
+<p><b>Recovery gate:</b> accepted</p>
+<table><tr><th>Research question</th><th>Techniques</th></tr><tr><td>RQ1_packed_also_in_dynamic</td><td>T1027, T1055</td></tr><tr><td>RQ1_packed_static_visible</td><td>T1027, T1055, T1082</td></tr><tr><td>RQ2_dynamic_only_after_unpacking</td><td>∅</td></tr><tr><td>RQ2_gained_after_unpacking</td><td>T1497</td></tr><tr><td>RQ2_kept</td><td>T1027, T1055, T1082</td></tr><tr><td>RQ2_lost</td><td>∅</td></tr><tr><td>RQ3_residual_C_minus_B</td><td>T1112, T1620, T9998</td></tr></table>
+<p><b>Residual classification (C \ B)</b></p><pre class='mono'>T1112,P,Incomplete or incorrect payload recovery,B_recovery#checks.V3,synthetic: points at the payload check
+T1620,K,Behaviour of the packer or unpacking stub,C#rules.dyn-rule-4,synthetic: points at the dynamic rule
+T9998,U,Unresolved: default when there is no evidence,,no evidence record; default U</pre>
+<h2>SYNTH-002 <span class='mono'>9cbe176c165117a8b22a67c1cb3bc60ea14ec2e1260a13d9c4f5f78df4ed0c6d</span></h2>
+<table><tr><th>Set</th><th>Status</th><th>Techniques (normalized)</th><th>Notes</th></tr>
+<tr><td>A</td><td>ok</td><td>T1027, T1055, T1082</td><td></td></tr>
+<tr><td>B</td><td>not_recovered</td><td class="nd">n/d</td><td>budget exceeded (25 &gt; 20); V4 not passed (3 imports failed to resolve); payload report B supplied but not used because the gate rejected recovery</td></tr>
+<tr><td>C</td><td>ok</td><td>T1027, T1055, T1105, T1112, T1620</td><td></td></tr>
+<tr><td>S</td><td>ok</td><td>T1055, T1105</td><td></td></tr>
+</table>
+<p><b>Recovery gate:</b> rejected: budget exceeded (25 &gt; 20); V4 not passed (3 imports failed to resolve)</p>
+<table><tr><th>Research question</th><th>Techniques</th></tr><tr><td>RQ1_packed_also_in_dynamic</td><td>T1027, T1055</td></tr><tr><td>RQ1_packed_static_visible</td><td>T1027, T1055, T1082</td></tr><tr><td>RQ2_dynamic_only_after_unpacking</td><td class="nd">n/d</td></tr><tr><td>RQ2_gained_after_unpacking</td><td class="nd">n/d</td></tr><tr><td>RQ2_kept</td><td class="nd">n/d</td></tr><tr><td>RQ2_lost</td><td class="nd">n/d</td></tr><tr><td>RQ3_residual_C_minus_B</td><td class="nd">n/d</td></tr></table>
+</body></html>

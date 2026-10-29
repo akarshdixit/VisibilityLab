@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Sample Report f81dbb79c0e9</title><style>
+body{font-family:Segoe UI,Arial,sans-serif;margin:24px;color:#14202b;background:#fff;max-width:1100px}
+h1{font-size:22px}h2{font-size:18px;margin-top:28px;border-bottom:2px solid #1fa89a;padding-bottom:4px}
+.warn{background:#fff3cd;border:1px solid #e0a82e;padding:10px 14px;border-radius:6px;font-weight:600}
+table{border-collapse:collapse;margin:8px 0 16px;font-size:14px}
+th,td{border:1px solid #c9d3dc;padding:5px 10px;text-align:left;vertical-align:top}
+th{background:#10202e;color:#fff}.nd{color:#9a6b00;font-style:italic}.mono{font-family:Consolas,monospace;font-size:12px}
+
+.badge{display:inline-block;padding:1px 8px;border-radius:10px;font-size:12px;font-weight:600;border:1px solid #889}
+.ok{background:#dff5ec}.failed{background:#fde2e1}.not_recovered{background:#fff1d6}.missing{background:#eef0f3}
+@media print{body{margin:0;max-width:none}h2{break-after:avoid}table{break-inside:avoid}}
+</style></head><body>
+<h1>Quantifying Behavioral Visibility Loss Due to Malware Packing - per-sample report</h1>
+<p class='warn'>SYNTHETIC RUN. All inputs are fictional fixtures. Nothing in this report is a result about real malware.</p>
+<h2>Sample and provenance</h2><table><tr><th>Sample SHA-256</th><td class='mono'>f81dbb79c0e9d3b0efde04eb3db340ca93cf3a0bf05216bcbfcf0e78a69a358d</td></tr><tr><th>Label</th><td>SYNTH-001</td></tr><tr><th>Run type</th><td>synthetic (pipeline mode synthetic)</td></tr><tr><th>Pipeline / Python</th><td>0.2.0 / 3.13.7</td></tr><tr><th>ATT&amp;CK mapping</th><td>attack_map.csv - Synthetic mapping v1 (fixture, not the official ATT&amp;CK export)<br><span class='mono'>50887f97cfb7cedb0080edbc6d34b2ca0814bf2fc54f861109299be86f0c9141</span></td></tr><tr><th>Manifest SHA-256</th><td class='mono'>8a6eac781cd73832bf52cce57f9dfb7584c3f869094b64d546eb437818fb5605</td></tr></table>
+<h2>Stages</h2><table><tr><th>Stage</th><th>Status</th><th>Techniques</th><th>Notes</th></tr>
+<tr><td>A - packed static</td><td><span class='badge ok'>ok</span></td><td>T1027, T1055, T1082</td><td></td></tr>
+<tr><td>B - payload static</td><td><span class='badge ok'>ok</span></td><td>T1027, T1055, T1082, T1497</td><td></td></tr>
+<tr><td>C - dynamic reference</td><td><span class='badge ok'>ok</span></td><td>T1027, T1055, T1112, T1620, T9998</td><td>flagged (kept): T9998</td></tr>
+<tr><td>S - sandbox labels (secondary)</td><td><span class='badge ok'>ok</span></td><td>T1055, T1486</td><td></td></tr>
+</table>
+<p><b>Recovery gate (V1-V5, source, budget):</b> accepted</p>
+<h2>Inputs (hash-verified before use)</h2><table><tr><th>Key</th><th>Path</th><th>SHA-256</th></tr>
+<tr><td>A</td><td>sample_001/A_packed_capa.json</td><td class='mono'>ee060b2b309c0334af7530a2d65e919a333690da2e0bd5f8e262606ff1d69174</td></tr>
+<tr><td>B</td><td>sample_001/B_payload_capa.json</td><td class='mono'>1429b0ed126fa9c1e4d3a1f032e689aa97d0addb955dc6f001cc945ef6074787</td></tr>
+<tr><td>B_recovery</td><td>sample_001/B_recovery.json</td><td class='mono'>1f43d0f459863d420cc27929083800cd4f32311c603f30bc7fada04ece5a1925</td></tr>
+<tr><td>C</td><td>sample_001/C_dynamic_capa.json</td><td class='mono'>d8f8af356f3eb630de30ec0a504df2de4f7041e712082b51bde0d8692cc72ae6</td></tr>
+<tr><td>S</td><td>sample_001/S_sandbox_labels.json</td><td class='mono'>0fca1c729935c626cda6be746f4b12465ebe32dfd6a2c659ab5836f1d50aad1e</td></tr>
+<tr><td>evidence</td><td>sample_001/evidence.json</td><td class='mono'>5be77216447efc8844edc2eea2dd99c78d995b9252bd1d146e3bdbc04770259d</td></tr>
+</table>
+<h2>Measures</h2><table><tr><th>Measure</th><th>Definition</th><th>Value</th><th>Counts</th></tr>
+<tr><td>QA</td><td>|A ∩ B| / |B|</td><td>0.75</td><td>3 / 4</td></tr>
+<tr><td>VA</td><td>|A ∩ C| / |C|</td><td>0.4</td><td>2 / 5</td></tr>
+<tr><td>VB</td><td>|B ∩ C| / |C|</td><td>0.4</td><td>2 / 5</td></tr>
+<tr><td>DB</td><td>|(B ∩ C) \ A| / |C|</td><td>0.0</td><td>0 / 5</td></tr>
+<tr><td>IB</td><td>|C \ B| / |C|</td><td>0.6</td><td>3 / 5</td></tr>
+<tr><td>G</td><td>|B \ A|</td><td>1</td><td>1</td></tr>
+<tr><td>L</td><td>|A \ B|</td><td>0</td><td>0</td></tr>
+<tr><td>M</td><td>|B ∩ C|</td><td>2</td><td>2</td></tr>
+<tr><td>O</td><td>|B \ C|</td><td>2</td><td>2</td></tr>
+<tr><td>S_overlap_C</td><td>|S ∩ C| (secondary, outside the measures)</td><td>1</td><td>1</td></tr></table>
+<h2>Research questions</h2><table><tr><th>Item</th><th>Techniques</th></tr><tr><td>RQ1_packed_also_in_dynamic</td><td>T1027, T1055</td></tr><tr><td>RQ1_packed_static_visible</td><td>T1027, T1055, T1082</td></tr><tr><td>RQ2_dynamic_only_after_unpacking</td><td>∅</td></tr><tr><td>RQ2_gained_after_unpacking</td><td>T1497</td></tr><tr><td>RQ2_kept</td><td>T1027, T1055, T1082</td></tr><tr><td>RQ2_lost</td><td>∅</td></tr><tr><td>RQ3_residual_C_minus_B</td><td>T1112, T1620, T9998</td></tr></table>
+<h2>Residual classification (C \ B)</h2><p>Status: ok &middot; P=1, K=1 (P+K=2)</p>
+<table><tr><th>Technique</th><th>Class</th><th>Evidence reference</th><th>Reason</th></tr><tr><td>T1112</td><td>P - Incomplete or incorrect payload recovery</td><td class='mono'>B_recovery#checks.V3</td><td>synthetic: points at the payload check</td></tr><tr><td>T1620</td><td>K - Behaviour of the packer or unpacking stub</td><td class='mono'>C#rules.dyn-rule-4</td><td>synthetic: points at the dynamic rule</td></tr><tr><td>T9998</td><td>U - Unresolved: default when there is no evidence</td><td class='mono'>(none)</td><td>no evidence record; default U</td></tr></table>
+<h2>Gain attribution (B \ A)</h2>
+<table><tr><th>Technique</th><th>Attribution</th><th>Evidence reference</th><th>Reason</th></tr><tr><td>T1497</td><td>payload</td><td class='mono'>B#rules.payload-rule-3</td><td>synthetic: payload rule reports it</td></tr></table>
+<h2>Normalization audit</h2><table><tr><th>Stage</th><th>Raw ID</th><th>Normalized</th><th>Status</th><th>Rules</th><th>Source rules</th></tr><tr><td>A</td><td>T1027</td><td>T1027</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>packed-rule-2</td></tr><tr><td>A</td><td>T1055</td><td>T1055</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>packed-rule-1</td></tr><tr><td>A</td><td>T1082</td><td>T1082</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>packed-rule-3</td></tr><tr><td>B</td><td>T0001</td><td>T1027</td><td>revoked_replaced</td><td class='mono'>N1;N2;N3;N4:revoked-&gt;T1027;N5;N6</td><td class='mono'>payload-rule-4</td></tr><tr><td>B</td><td>T1027</td><td>T1027</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5:merged;N6</td><td class='mono'>payload-rule-2</td></tr><tr><td>B</td><td>T1055</td><td>T1055</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>payload-rule-1</td></tr><tr><td>B</td><td>T1082</td><td>T1082</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>payload-rule-2</td></tr><tr><td>B</td><td>T1497</td><td>T1497</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>payload-rule-3</td></tr><tr><td>C</td><td>T1027</td><td>T1027</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>dyn-rule-2</td></tr><tr><td>C</td><td>T1055</td><td>T1055</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>dyn-rule-1</td></tr><tr><td>C</td><td>T1112</td><td>T1112</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>dyn-rule-3</td></tr><tr><td>C</td><td>T1620</td><td>T1620</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>dyn-rule-4</td></tr><tr><td>C</td><td>T9998</td><td>T9998</td><td>unmapped</td><td class='mono'>N1;N2;N3;N4:unmapped;N5;N6</td><td class='mono'>dyn-rule-5</td></tr><tr><td>S</td><td>T1055</td><td>T1055</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>sandbox_label</td></tr><tr><td>S</td><td>T1486</td><td>T1486</td><td>current</td><td class='mono'>N1;N2;N3;N4;N5;N6</td><td class='mono'>sandbox_label</td></tr></table>
+<h2>Limitations</h2><ul><li>Stage C (capa dynamic mode on a CAPE report) is a tool-generated reference, not ground truth: one sandbox run, one configuration, limited duration.</li><li>capa rule coverage and scope limit what any stage can report (class T).</li><li>ATT&amp;CK mapping is ambiguous across tools; IDs are normalized against the recorded table and audited.</li><li>Unpacking may fail; failed recovery is kept in the experiment and B-dependent measures are n/d, never 0.</li><li>The measures describe overlap with a tool-generated reference, not the share of a sample&#x27;s true capabilities.</li><li>Results describe only this sample; no population or detection-rate claim is made.</li></ul>
+<p class='mono'>This report renders the sealed outputs listed in manifest.json; verify them with <code>python -m pipeline verify --dir &lt;folder&gt;</code>. The report file itself is not sealed.</p></body></html>

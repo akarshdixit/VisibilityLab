@@ -1,0 +1,2 @@
+technique,attribution,evidence_ref,reason
+T1497,payload,B#rules.payload-rule-3,synthetic: payload rule reports it

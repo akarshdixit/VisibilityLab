@@ -1,0 +1,64 @@
+{
+  "approval_id": null,
+  "created_utc": "2026-10-27T18:19:40Z",
+  "inputs": {
+    "A": {
+      "path": "sample_002/A_packed_capa.json",
+      "sha256": "172442c0c694676ce4408d5e0535922a5112f57baff6918ae3f3ceea42d08b9c"
+    },
+    "B": {
+      "path": "sample_002/B_payload_capa.json",
+      "sha256": "3c973e319ed934b1bc5b18b9ac3fa909de52a76dfee2e7835e03e8a501c1e835"
+    },
+    "B_recovery": {
+      "path": "sample_002/B_recovery.json",
+      "sha256": "0095c7c461ad83327ae5e54f1dd856e60da53e2d1a6bed7c6169aa463aee419b"
+    },
+    "C": {
+      "path": "sample_002/C_dynamic_capa.json",
+      "sha256": "f83806f9cae8ab6316182f272304cc665378509d693a6dd77b1d20ae53cac972"
+    },
+    "S": {
+      "path": "sample_002/S_sandbox_labels.json",
+      "sha256": "b4ac2ce66a7629aa473fd9594df3ec8391511024639cc6614a589b48465b9e94"
+    },
+    "evidence": {
+      "path": "sample_002/evidence.json",
+      "sha256": "ac4fbc4959ae93b563ec654a03c0c096078fa525809c7c9af5e24fbd2bd11d8b"
+    }
+  },
+  "manifest_sha256": "df904e9ca5fa20aea88a1a48da87db2bfd49a75a7f5b0b2b7792fd98fd0f5032",
+  "mapping": {
+    "name": "attack_map.csv",
+    "sha256": "50887f97cfb7cedb0080edbc6d34b2ca0814bf2fc54f861109299be86f0c9141",
+    "version": "Synthetic mapping v1 (fixture, not the official ATT&CK export)"
+  },
+  "mode": "synthetic",
+  "options": {
+    "collapse_subtechniques": false
+  },
+  "outputs": {
+    "gain_attribution.csv": "a1f291eac6fcf49d61e43113553f6e3ce059dc094cb61df578b9179cc99b8742",
+    "normalization_audit.csv": "9ceebc289424e8f2336dbfc4f91190cfef4e7513b5a8d23146e2e825f0443633",
+    "raw/A.json": "172442c0c694676ce4408d5e0535922a5112f57baff6918ae3f3ceea42d08b9c",
+    "raw/B.json": "3c973e319ed934b1bc5b18b9ac3fa909de52a76dfee2e7835e03e8a501c1e835",
+    "raw/B_recovery.json": "0095c7c461ad83327ae5e54f1dd856e60da53e2d1a6bed7c6169aa463aee419b",
+    "raw/C.json": "f83806f9cae8ab6316182f272304cc665378509d693a6dd77b1d20ae53cac972",
+    "raw/S.json": "b4ac2ce66a7629aa473fd9594df3ec8391511024639cc6614a589b48465b9e94",
+    "raw/evidence.json": "ac4fbc4959ae93b563ec654a03c0c096078fa525809c7c9af5e24fbd2bd11d8b",
+    "residual_classification.csv": "e43df4dfdf3c12addbadd651794cdb7a49a223df1a77c1f63b068222a02952cd",
+    "results.json": "1517c4fa7c5d091ae83fcd6bef4b83d2fa41b221d598bcb76a42deaa6ab7015b"
+  },
+  "sample_sha256": "9cbe176c165117a8b22a67c1cb3bc60ea14ec2e1260a13d9c4f5f78df4ed0c6d",
+  "stages": {
+    "A": "ok",
+    "B": "not_recovered",
+    "C": "ok",
+    "S": "ok"
+  },
+  "synthetic": true,
+  "tool": {
+    "pipeline": "0.2.0",
+    "python": "3.13.7"
+  }
+}

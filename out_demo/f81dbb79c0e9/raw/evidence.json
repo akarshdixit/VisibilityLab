@@ -1,0 +1,26 @@
+{
+  "synthetic": true,
+  "note": "SYNTHETIC FIXTURE - fictional data for pipeline testing; not real tool output. Evidence shows how the rule works; it is not a conclusion about any sample.",
+  "residual": [
+    {
+      "technique": "T1112",
+      "class": "P",
+      "evidence_ref": "B_recovery#checks.V3",
+      "reason": "synthetic: points at the payload check"
+    },
+    {
+      "technique": "T1620",
+      "class": "K",
+      "evidence_ref": "C#rules.dyn-rule-4",
+      "reason": "synthetic: points at the dynamic rule"
+    }
+  ],
+  "gains": [
+    {
+      "technique": "T1497",
+      "attribution": "payload",
+      "evidence_ref": "B#rules.payload-rule-3",
+      "reason": "synthetic: payload rule reports it"
+    }
+  ]
+}

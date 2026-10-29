@@ -1,0 +1,16 @@
+stage,raw_id,normalized_id,status,rules_applied,source_rules
+A,T1027,T1027,current,N1;N2;N3;N4;N5;N6,packed-rule-2
+A,T1055,T1055,current,N1;N2;N3;N4;N5;N6,packed-rule-1
+A,T1082,T1082,current,N1;N2;N3;N4;N5;N6,packed-rule-3
+B,T0001,T1027,revoked_replaced,N1;N2;N3;N4:revoked->T1027;N5;N6,payload-rule-4
+B,T1027,T1027,current,N1;N2;N3;N4;N5:merged;N6,payload-rule-2
+B,T1055,T1055,current,N1;N2;N3;N4;N5;N6,payload-rule-1
+B,T1082,T1082,current,N1;N2;N3;N4;N5;N6,payload-rule-2
+B,T1497,T1497,current,N1;N2;N3;N4;N5;N6,payload-rule-3
+C,T1027,T1027,current,N1;N2;N3;N4;N5;N6,dyn-rule-2
+C,T1055,T1055,current,N1;N2;N3;N4;N5;N6,dyn-rule-1
+C,T1112,T1112,current,N1;N2;N3;N4;N5;N6,dyn-rule-3
+C,T1620,T1620,current,N1;N2;N3;N4;N5;N6,dyn-rule-4
+C,T9998,T9998,unmapped,N1;N2;N3;N4:unmapped;N5;N6,dyn-rule-5
+S,T1055,T1055,current,N1;N2;N3;N4;N5;N6,sandbox_label
+S,T1486,T1486,current,N1;N2;N3;N4;N5;N6,sandbox_label
